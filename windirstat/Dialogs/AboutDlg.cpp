@@ -266,7 +266,7 @@ std::wstring CAboutDlg::GetAppVersion()
             std::to_wstring(LOWORD(pVersion->dwFileVersionMS)),
             std::to_wstring(HIWORD(pVersion->dwFileVersionLS)),
             std::to_wstring(LOWORD(pVersion->dwFileVersionLS)),
-            _CRT_WIDE(GIT_DATE), _CRT_WIDE(GIT_COMMIT));
+            "", "");
     }
 
     return L"WinDirStat";
